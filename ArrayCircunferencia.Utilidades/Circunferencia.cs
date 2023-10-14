@@ -6,6 +6,10 @@
 
         private double _valorRadio;
 
+        public Circunferencia()
+        { 
+
+        }
         public Circunferencia(double valorArea) 
         {
               _valorRadio = valorArea;
@@ -29,7 +33,7 @@
 
         public double GetPerimetro() => Math.Truncate(2 * Math.PI * _valorRadio);
 
-        public double GetArea() =>Math.Truncate(Math.PI * Math.Pow(2, _valorRadio));
+        public double GetArea() =>Math.Truncate(Math.PI * (Math.Pow( _valorRadio,2)));
        
     }
 }
